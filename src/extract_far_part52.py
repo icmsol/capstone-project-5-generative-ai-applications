@@ -84,10 +84,19 @@ def extract(pdf_path: Path, output_csv: Path) -> None:
         if number_key(number) <= (253, 1):
             candidates.append((number, title, match.start()))
 
+    part_52_3_boundary = re.search(
+        r"(?m)^SUBPART 52\.3 - PROVISION AND CLAUSE MATRIX\b", part_text
+    )
+    part_52_2_end = (
+        part_52_3_boundary.start()
+        if part_52_3_boundary
+        else len(part_text)
+    )
+
     selected = longest_increasing_headers(candidates)
     rows = []
     for i, (number, _, start) in enumerate(selected):
-        end = selected[i + 1][2] if i + 1 < len(selected) else len(part_text)
+        end = selected[i + 1][2] if i + 1 < len(selected) else part_52_2_end
         lines = part_text[start:end].splitlines()
         title = lines[0][len(number):].strip()
         title_lines = 1

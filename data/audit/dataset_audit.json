@@ -16,10 +16,10 @@
   "empty_usable_records": 0,
   "exact_duplicate_usable_records": 0,
   "duplicate_titles": 0,
-  "total_clean_characters": 2214901,
+  "total_clean_characters": 2214359,
   "unique_characters": 97,
-  "total_words": 343705,
-  "unique_word_tokens_casefolded": 8519,
+  "total_words": 343620,
+  "unique_word_tokens_casefolded": 8513,
   "word_count_per_record": {
     "min": 41,
     "p25": 150.25,
@@ -81,7 +81,7 @@
     },
     {
       "clause_number": "52.212-3",
-      "title": "Offeror Representations and Certifications—Commercial Products and Commercial Services.",
+      "title": "Offeror Representations and Certifications\u2014Commercial Products and Commercial Services.",
       "words": 7569
     },
     {
@@ -91,7 +91,7 @@
     },
     {
       "clause_number": "52.212-4",
-      "title": "Contract Terms and Conditions—Commercial Products and Commercial Services.",
+      "title": "Contract Terms and Conditions\u2014Commercial Products and Commercial Services.",
       "words": 5999
     },
     {
@@ -101,7 +101,7 @@
     },
     {
       "clause_number": "52.212-5",
-      "title": "Contract Terms and Conditions Required To Implement Statutes or Executive Orders—Commercial Products and Commercial Services.",
+      "title": "Contract Terms and Conditions Required To Implement Statutes or Executive Orders\u2014Commercial Products and Commercial Services.",
       "words": 4169
     },
     {
@@ -179,7 +179,7 @@
   ],
   "sufficiency_decision": "GO",
   "recommended_model_input": "Character-level causal Transformer using clause-level train/validation/test splitting before sequence chunking.",
-  "rationale": "The corpus contains approximately 2.21 million clean characters across 610 authentic provisions/clauses, a 97-character vocabulary, no empty active records, and no exact duplicate active records. This is sufficient for a small transparent PyTorch generative model while remaining practical on a Colab T4.",
+  "rationale": "The corrected model-ready corpus contains approximately 2.21 million characters across 610 authentic provisions/clauses, a 97-character vocabulary, no empty active records, and no exact duplicate active records. This is sufficient for a small transparent PyTorch generative model while remaining practical on a Colab T4.",
   "quality_checks": {
     "clause_numbers_unique": true,
     "clause_number_format_valid": true,
@@ -187,6 +187,17 @@
     "all_titles_nonempty": true,
     "records_with_prescription_intro": 610,
     "records_with_end_marker": 609,
-    "end_marker_note": "One active record (52.216-21) includes multiple alternates and no terminal end marker in extracted source text; manual inspection confirmed substantive text is present."
+    "end_marker_note": "One active record (52.216-21) includes multiple alternates and no terminal end marker in extracted source text; manual inspection confirmed substantive text is present.",
+    "part_52_3_spillover_records": 0
+  },
+  "record_text_characters": 2207308,
+  "record_text_word_tokens": 342400,
+  "counting_scope_note": "Record-text totals count only the CSV text field. Model-corpus totals also include each clause-number prefix and the two-newline separators between records.",
+  "boundary_correction": {
+    "record": "52.253-1",
+    "rule": "Truncate after the first terminal '(End of clause)' marker.",
+    "removed_characters": 542,
+    "removed_word_tokens": 85,
+    "removed_part_52_3_spillover": true
   }
 }

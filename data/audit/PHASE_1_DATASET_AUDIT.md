@@ -13,9 +13,11 @@
 | Usable provisions/clauses | 610 |
 | Empty usable records | 0 |
 | Exact duplicate usable records | 0 |
-| Clean corpus characters | 2,214,901 |
-| Case-folded word tokens | 343,705 |
-| Unique case-folded word tokens | 8,519 |
+| Record text characters | 2,207,308 |
+| Model-ready corpus characters | 2,214,359 |
+| Record text word-like tokens | 342,400 |
+| Model-ready corpus word-like tokens | 343,620 |
+| Unique case-folded word tokens | 8,513 |
 | Character vocabulary | 97 |
 | Median words per record | 291.5 |
 | Minimum / maximum words | 41 / 8,553 |

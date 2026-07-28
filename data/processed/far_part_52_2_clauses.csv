@@ -26845,7 +26845,7 @@ authorized deviation is indicated by the addition of ""(DEVIATION)"" after the d
 authorized deviation is indicated by the addition of ""(DEVIATION)"" after the name of the regulation.
 
 (End of clause)",True,True,2026-01,2026-03-13,1437-2004
-FAR52_0610,52.253-1,Computer Generated Forms.,253,False,273,1645,"Computer Generated Forms.
+FAR52_0610,52.253-1,Computer Generated Forms.,253,False,188,1103,"Computer Generated Forms.
 As prescribed in FAR 53.111 , insert the following clause:
 
 COMPUTER GENERATED FORMS (JAN 1991)
@@ -26861,24 +26861,4 @@ edition date.
 (c) If the Contractor submits a computer generated version of a form that is different than the required form, then the rights
 and obligations of the parties will be determined based on the content of the required form.
 
-(End of clause)
-
-SUBPART 52.3 - PROVISION AND CLAUSE MATRIX                                                            52.300
-
-Subpart 52.3 - Provision and Clause Matrix
-
-52.300 Scope of subpart.
-The matrix contains a column for each principal type and/or purpose of contract (see 52.101(e)).
-
-52.3-1
-
-52.3-2
-
-SUBPART 52.3 - PROVISION AND CLAUSE MATRIX
-52.301 Solicitation provisions and contract clauses (Matrix).
-The FAR matrix is not carried in the CFR. It is available via the internet at https://www.acquisition.gov/smart-matrix.
-
-52.301
-52.3-3
-
-52.3-4",False,False,2026-01,2026-03-13,1437-2004
+(End of clause)",False,False,2026-01,2026-03-13,1437-2004

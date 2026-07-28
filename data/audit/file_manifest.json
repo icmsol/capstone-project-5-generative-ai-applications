@@ -4,31 +4,31 @@
     "sha256": "96546c596efda356f920fab4767b024cf9f3bf2302d6b46ff429b43e40876b93"
   },
   "data/audit/PHASE_1_DATASET_AUDIT.md": {
-    "bytes": 2171,
-    "sha256": "f8dfe347ac242f946bc3553680aa53527f5627d076f9b48d9ffd7e06aa00982c"
+    "bytes": 2271,
+    "sha256": "4d62c573482cea68951191f84dd88194b189cabd5b4e193431b6365c19c884e0"
   },
   "data/audit/dataset_audit.json": {
-    "bytes": 5518,
-    "sha256": "d057c0376556b70ef089e38826d5f56048c38d0542487d762115e5f024844ae7"
+    "bytes": 6076,
+    "sha256": "fac558c15dffbd424aaeae5e900b87d37991f37ce579911de9cd813e9340abb9"
   },
   "data/audit/far_part_52_2_section_inventory.csv": {
     "bytes": 2267378,
     "sha256": "34ed1b3a96435b4d9ab8d9ade3e21c9b8bd919af27a8658042e030b6ca64c145"
   },
   "data/processed/far_part_52_2_clauses.csv": {
-    "bytes": 2292627,
-    "sha256": "931970502fa5a846cb9c4643eb4b44bdecd76db9377f8d0886ee9ca8260e6372"
+    "bytes": 2292085,
+    "sha256": "732ee679bba6ccaffbbe1eafb0fda3e893743934293cceb98451414d3a70b4f4"
   },
   "data/processed/far_part_52_2_corpus.txt": {
-    "bytes": 2218959,
-    "sha256": "7361c73e4abd4d5b0a40ef88ba56fd1008b0c36a604c07146baeff1dea248da3"
+    "bytes": 2218417,
+    "sha256": "b4070df00fa2758a66c0f23cdd0bdb385c331b1762cb15e8e3a5161c2b10ab1a"
   },
   "data/raw/FAR_FAC_2026-01.pdf": {
     "bytes": 13082043,
     "sha256": "f22a17e30ff99682edcba9f6827e349cac0ecbe8908888c08616a81397e85bca"
   },
   "src/extract_far_part52.py": {
-    "bytes": 4498,
-    "sha256": "c839478da187bb7411387fbb4066b4239b9d8aac0adc9921f9c1a4a784c85735"
+    "bytes": 4734,
+    "sha256": "1add441c618767dd6fd1f5bc05982a9372ca158b4d80fa4500a23f8a00aed814"
   }
 }
