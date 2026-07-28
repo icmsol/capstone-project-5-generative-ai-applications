@@ -1,0 +1,45 @@
+{
+  "project_title": "Transformer-Based Generation of Public-Sector Contract Language",
+  "dataset": {
+    "name": "FAR Part 52.2 Text of Provisions and Clauses",
+    "fac": "2026-01",
+    "effective_date": "2026-03-13",
+    "processed_csv": "data/processed/far_part_52_2_clauses.csv",
+    "split_seed": 42,
+    "train_fraction": 0.8,
+    "validation_fraction": 0.1,
+    "test_fraction": 0.1
+  },
+  "model": {
+    "type": "character_level_causal_transformer",
+    "context_length": 256,
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 4,
+    "dropout_baseline": 0.1,
+    "dropout_experiment": 0.3,
+    "batch_size": 64
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "max_epochs": 15,
+    "gradient_clip_norm": 1.0,
+    "early_stopping_patience": 3,
+    "checkpoint_metric": "validation_loss"
+  },
+  "generation": {
+    "max_new_characters": 400,
+    "temperatures": [
+      0.7,
+      1.0,
+      1.2
+    ],
+    "top_k_values": [
+      20,
+      40
+    ],
+    "fixed_seed": 42
+  },
+  "status": "provisional_until_smoke_test"
+}

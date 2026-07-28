@@ -1,0 +1,192 @@
+{
+  "project": "Capstone Project 5 - Generative AI Applications",
+  "dataset_name": "FAR Part 52.2 Text of Provisions and Clauses",
+  "source_authority": "Acquisition.gov, U.S. General Services Administration",
+  "source_fac": "2026-01",
+  "effective_date": "2026-03-13",
+  "source_pdf_filename": "FAR_FAC_2026-01.pdf",
+  "source_pdf_sha256": "f22a17e30ff99682edcba9f6827e349cac0ecbe8908888c08616a81397e85bca",
+  "source_pdf_pages_total": 2026,
+  "source_pdf_part_52_2_pages": "1437-2004",
+  "extraction_method": "PDF text extraction with Poppler pdftotext -layout, followed by deterministic section-boundary parsing and page-artifact removal.",
+  "total_detected_section_headings_52_200_to_52_253_1": 746,
+  "reserved_section_headings": 135,
+  "scope_records_excluded": 1,
+  "usable_clause_provision_records": 610,
+  "empty_usable_records": 0,
+  "exact_duplicate_usable_records": 0,
+  "duplicate_titles": 0,
+  "total_clean_characters": 2214901,
+  "unique_characters": 97,
+  "total_words": 343705,
+  "unique_word_tokens_casefolded": 8519,
+  "word_count_per_record": {
+    "min": 41,
+    "p25": 150.25,
+    "median": 291.5,
+    "p75": 604.5,
+    "p90": 1200.0,
+    "max": 8553
+  },
+  "records_with_underscore_fill_markers": 178,
+  "records_with_bracket_fill_markers": 112,
+  "clause_families": 45,
+  "largest_families": [
+    {
+      "family": "247",
+      "records": 68
+    },
+    {
+      "family": "222",
+      "records": 52
+    },
+    {
+      "family": "232",
+      "records": 39
+    },
+    {
+      "family": "216",
+      "records": 30
+    },
+    {
+      "family": "204",
+      "records": 28
+    },
+    {
+      "family": "236",
+      "records": 27
+    },
+    {
+      "family": "214",
+      "records": 25
+    },
+    {
+      "family": "225",
+      "records": 24
+    },
+    {
+      "family": "246",
+      "records": 24
+    },
+    {
+      "family": "219",
+      "records": 23
+    }
+  ],
+  "largest_records": [
+    {
+      "clause_number": "52.219-9",
+      "title": "Small Business Subcontracting Plan.",
+      "words": 8553
+    },
+    {
+      "clause_number": "52.212-3",
+      "title": "Offeror Representations and Certifications—Commercial Products and Commercial Services.",
+      "words": 7569
+    },
+    {
+      "clause_number": "52.232-12",
+      "title": "Advance Payments.",
+      "words": 6413
+    },
+    {
+      "clause_number": "52.212-4",
+      "title": "Contract Terms and Conditions—Commercial Products and Commercial Services.",
+      "words": 5999
+    },
+    {
+      "clause_number": "52.245-1",
+      "title": "Government Property.",
+      "words": 5179
+    },
+    {
+      "clause_number": "52.212-5",
+      "title": "Contract Terms and Conditions Required To Implement Statutes or Executive Orders—Commercial Products and Commercial Services.",
+      "words": 4169
+    },
+    {
+      "clause_number": "52.222-41",
+      "title": "Service Contract Labor Standards.",
+      "words": 3710
+    },
+    {
+      "clause_number": "52.227-14",
+      "title": "Rights in Data-General.",
+      "words": 3374
+    },
+    {
+      "clause_number": "52.232-27",
+      "title": "Prompt Payment for Construction Contracts.",
+      "words": 3275
+    },
+    {
+      "clause_number": "52.248-1",
+      "title": "Value Engineering.",
+      "words": 3230
+    }
+  ],
+  "smallest_records": [
+    {
+      "clause_number": "52.216-1",
+      "title": "Type of Contract.",
+      "words": 41
+    },
+    {
+      "clause_number": "52.233-4",
+      "title": "Applicable Law for Breach of Contract Claim.",
+      "words": 43
+    },
+    {
+      "clause_number": "52.204-1",
+      "title": "Approval of Contract.",
+      "words": 44
+    },
+    {
+      "clause_number": "52.222-10",
+      "title": "Compliance with Copeland Act Requirements.",
+      "words": 46
+    },
+    {
+      "clause_number": "52.214-34",
+      "title": "Submission of Offers in the English Language.",
+      "words": 51
+    },
+    {
+      "clause_number": "52.204-19",
+      "title": "Incorporation by Reference of Representations and Certifications.",
+      "words": 52
+    },
+    {
+      "clause_number": "52.232-24",
+      "title": "Prohibition of Assignment of Claims.",
+      "words": 52
+    },
+    {
+      "clause_number": "52.236-24",
+      "title": "Work Oversight in Architect-Engineer Contracts.",
+      "words": 53
+    },
+    {
+      "clause_number": "52.225-14",
+      "title": "Inconsistency between English Version and Translation of Contract.",
+      "words": 54
+    },
+    {
+      "clause_number": "52.214-35",
+      "title": "Submission of Offers in U.S. Currency.",
+      "words": 55
+    }
+  ],
+  "sufficiency_decision": "GO",
+  "recommended_model_input": "Character-level causal Transformer using clause-level train/validation/test splitting before sequence chunking.",
+  "rationale": "The corpus contains approximately 2.21 million clean characters across 610 authentic provisions/clauses, a 97-character vocabulary, no empty active records, and no exact duplicate active records. This is sufficient for a small transparent PyTorch generative model while remaining practical on a Colab T4.",
+  "quality_checks": {
+    "clause_numbers_unique": true,
+    "clause_number_format_valid": true,
+    "all_usable_text_nonempty": true,
+    "all_titles_nonempty": true,
+    "records_with_prescription_intro": 610,
+    "records_with_end_marker": 609,
+    "end_marker_note": "One active record (52.216-21) includes multiple alternates and no terminal end marker in extracted source text; manual inspection confirmed substantive text is present."
+  }
+}
