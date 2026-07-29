@@ -88,5 +88,69 @@
     "validation_improvement_verified": true,
     "checkpoint_round_trip_verified": true,
     "phase5_ready": true
+  },
+  "phase5_training_plan": {
+    "status": "READY",
+    "seed": 42,
+    "training_configuration": {
+      "batch_size": 64,
+      "validation_batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "adam_betas": [
+        0.9,
+        0.95
+      ],
+      "maximum_epochs": 15,
+      "early_stopping_patience": 3,
+      "early_stopping_minimum_delta": 0.0001,
+      "gradient_clip_norm": 1.0,
+      "num_workers": 0
+    },
+    "experiments": {
+      "baseline_dropout_0.10": {
+        "dropout": 0.1,
+        "description": "Validated baseline Transformer configuration."
+      },
+      "experimental_dropout_0.30": {
+        "dropout": 0.3,
+        "description": "Controlled comparison changing only dropout."
+      }
+    },
+    "train_windows": 11489,
+    "validation_windows": 1408,
+    "held_out_test_windows": 1444,
+    "train_batches_per_epoch": 180,
+    "validation_batches_per_epoch": 22,
+    "maximum_training_steps_per_run": 2700,
+    "model_selection_metric": "validation cross-entropy loss",
+    "test_partition_used_during_selection": false
+  },
+  "phase5_model_selection": {
+    "status": "COMPLETE",
+    "selected_experiment": "baseline_dropout_0.10",
+    "selected_dropout": 0.1,
+    "selected_best_epoch": 15,
+    "selected_best_validation_loss": 1.1254937060881118,
+    "selected_best_validation_perplexity": 3.081737946185641,
+    "selection_metric": "validation cross-entropy loss",
+    "selected_checkpoint": "checkpoints/phase5/baseline_dropout_0.10_best.pt",
+    "controlled_variable": "dropout",
+    "test_partition_used": false
+  },
+  "phase5_completion": {
+    "status": "COMPLETE",
+    "selected_experiment": "baseline_dropout_0.10",
+    "selected_dropout": 0.1,
+    "best_epoch": 15,
+    "best_validation_loss": 1.1254937060881118,
+    "best_validation_perplexity": 3.081737946185641,
+    "validation_loss_advantage_percent": 28.8863942216594,
+    "perplexity_advantage_percent": 36.69312772870402,
+    "compact_checkpoint": "checkpoints/phase5/selected_model_inference.pt",
+    "checkpoint_restoration_maximum_difference": 0.0,
+    "controlled_variable": "dropout",
+    "test_partition_status": "UNTOUCHED",
+    "phase6_readiness": "PASS"
   }
 }

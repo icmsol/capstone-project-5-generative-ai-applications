@@ -1,0 +1,146 @@
+{
+  "phase": 5,
+  "status": "PASS",
+  "training_configuration": {
+    "batch_size": 64,
+    "validation_batch_size": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "adam_betas": [
+      0.9,
+      0.95
+    ],
+    "maximum_epochs": 15,
+    "early_stopping_patience": 3,
+    "early_stopping_minimum_delta": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "num_workers": 0
+  },
+  "baseline_summary": {
+    "experiment_name": "baseline_dropout_0.10",
+    "description": "Validated baseline Transformer configuration.",
+    "dropout": 0.1,
+    "seed": 42,
+    "epochs_completed": 15,
+    "maximum_epochs": 15,
+    "stopped_early": false,
+    "best_epoch": 15,
+    "initial_validation_loss": 4.610473369341118,
+    "initial_validation_perplexity": 100.53172701204264,
+    "best_validation_loss": 1.1254937060881118,
+    "best_validation_perplexity": 3.081737946185641,
+    "final_training_loss": 1.2870077052558522,
+    "final_validation_loss": 1.1254937060881118,
+    "total_seconds": 133.06702961999963,
+    "peak_gpu_memory_gb": 0.5874242782592773,
+    "parameter_count": 838400,
+    "best_checkpoint": "checkpoints/phase5/baseline_dropout_0.10_best.pt",
+    "latest_checkpoint": "checkpoints/phase5/baseline_dropout_0.10_latest.pt",
+    "history_file": "outputs/phase5_training/baseline_dropout_0.10_history.json",
+    "test_partition_used_during_training": false,
+    "test_partition_used_for_selection": false
+  },
+  "experimental_summary": {
+    "experiment_name": "experimental_dropout_0.30",
+    "description": "Controlled comparison changing only dropout.",
+    "dropout": 0.3,
+    "seed": 42,
+    "epochs_completed": 15,
+    "maximum_epochs": 15,
+    "stopped_early": false,
+    "best_epoch": 15,
+    "initial_validation_loss": 4.610473369341118,
+    "initial_validation_perplexity": 100.53172701204264,
+    "best_validation_loss": 1.5826700021318687,
+    "best_validation_perplexity": 4.867935874290435,
+    "final_training_loss": 1.8446334668539655,
+    "final_validation_loss": 1.5826700021318687,
+    "total_seconds": 137.61072903200056,
+    "peak_gpu_memory_gb": 0.5937318801879883,
+    "parameter_count": 838400,
+    "best_checkpoint": "checkpoints/phase5/experimental_dropout_0.30_best.pt",
+    "latest_checkpoint": "checkpoints/phase5/experimental_dropout_0.30_latest.pt",
+    "history_file": "outputs/phase5_training/experimental_dropout_0.30_history.json",
+    "test_partition_used_during_training": false,
+    "test_partition_used_for_selection": false
+  },
+  "selected_experiment": "baseline_dropout_0.10",
+  "selected_dropout": 0.1,
+  "selected_best_epoch": 15,
+  "selected_best_validation_loss": 1.1254937060881118,
+  "selected_best_validation_perplexity": 3.081737946185641,
+  "validation_loss_advantage_percent": 28.8863942216594,
+  "perplexity_advantage_percent": 36.69312772870402,
+  "configuration_differences": {
+    "dropout": {
+      "baseline": 0.1,
+      "experimental": 0.3
+    }
+  },
+  "compact_checkpoint": "checkpoints/phase5/selected_model_inference.pt",
+  "compact_checkpoint_bytes": 3421551,
+  "checkpoint_restoration_maximum_difference": 0.0,
+  "full_training_checkpoint_policy": "Full optimizer checkpoints remain runtime-local. The compact selected inference checkpoint is the permanent repository artifact.",
+  "test_partition_status": "UNTOUCHED",
+  "phase5_exit_checks": {
+    "baseline_training_complete": true,
+    "experimental_training_complete": true,
+    "controlled_variable_is_dropout_only": true,
+    "selected_model_is_baseline": true,
+    "comparison_figure_exists": true,
+    "comparison_table_exists": true,
+    "selection_record_exists": true,
+    "compact_checkpoint_exists": true,
+    "compact_checkpoint_restores": true,
+    "test_not_used_during_training": true,
+    "test_not_used_for_selection": true
+  },
+  "permanent_artifacts": [
+    {
+      "path": "config/project_config.json",
+      "bytes": 4638,
+      "sha256": "62c2c9330096ab5f1d0f23adf82965c76cdb22eeabbaee8e546eb6354c4e9c30"
+    },
+    {
+      "path": "outputs/phase5_training/baseline_dropout_0.10_history.json",
+      "bytes": 6256,
+      "sha256": "e1f07d95a46f42f1da8ca0891f48c2a6a0ff6a57517e0e6c254014f12c041f71"
+    },
+    {
+      "path": "outputs/phase5_training/baseline_dropout_0.10_summary.json",
+      "bytes": 971,
+      "sha256": "c206cacee2b01cc637efa1e313653e87ff47cf2cdf935c3d4e09edc7f9468eea"
+    },
+    {
+      "path": "outputs/phase5_training/experimental_dropout_0.30_history.json",
+      "bytes": 6259,
+      "sha256": "b774af049b4a6b7fc141f377541fce0f3b06dffa732521e2995b1120577518d3"
+    },
+    {
+      "path": "outputs/phase5_training/experimental_dropout_0.30_summary.json",
+      "bytes": 986,
+      "sha256": "b8387e8379c4abb94ba8f6e804e107ce96085cc410e2683208017d471a986e8d"
+    },
+    {
+      "path": "outputs/phase5_training/phase5_model_comparison.csv",
+      "bytes": 709,
+      "sha256": "3d7d4b679c49d0e677e4ed8d2e2f680d630f1a388494c87762a05e88eca930bd"
+    },
+    {
+      "path": "outputs/phase5_training/phase5_model_selection.json",
+      "bytes": 1259,
+      "sha256": "e57823eb551b3b5888918eada3899d23164054530007a5d4f86e3e7eb0342e23"
+    },
+    {
+      "path": "figures/phase5_validation_loss_comparison.png",
+      "bytes": 110290,
+      "sha256": "c88238469f3879e3b5d06c0f938cf0da21a8e79ae2ebb84d0d43d1b930cdeae6"
+    },
+    {
+      "path": "checkpoints/phase5/selected_model_inference.pt",
+      "bytes": 3421551,
+      "sha256": "3ce6ca9228b574d38bdec8e0908ed7918053b49f0f04ef27fdd9c393be3ef73c"
+    }
+  ],
+  "phase6_readiness": "PASS"
+}

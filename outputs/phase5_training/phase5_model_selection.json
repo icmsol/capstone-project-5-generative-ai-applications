@@ -1,0 +1,30 @@
+{
+  "phase": 5,
+  "status": "MODEL_SELECTED",
+  "selection_metric": "validation cross-entropy loss",
+  "selected_experiment": "baseline_dropout_0.10",
+  "selected_dropout": 0.1,
+  "selected_best_epoch": 15,
+  "selected_best_validation_loss": 1.1254937060881118,
+  "selected_best_validation_perplexity": 3.081737946185641,
+  "comparison_experiment": "experimental_dropout_0.30",
+  "comparison_dropout": 0.3,
+  "comparison_best_validation_loss": 1.5826700021318687,
+  "comparison_best_validation_perplexity": 4.867935874290435,
+  "validation_loss_absolute_improvement": 0.45717629604375687,
+  "validation_loss_relative_improvement_percent": 28.8863942216594,
+  "perplexity_absolute_improvement": 1.786197928104794,
+  "perplexity_relative_improvement_percent": 36.69312772870402,
+  "controlled_configuration_differences": {
+    "dropout": {
+      "baseline": 0.1,
+      "experimental": 0.3
+    }
+  },
+  "selected_checkpoint": "checkpoints/phase5/baseline_dropout_0.10_best.pt",
+  "comparison_table": "outputs/phase5_training/phase5_model_comparison.csv",
+  "comparison_figure": "figures/phase5_validation_loss_comparison.png",
+  "test_partition_used_during_training": false,
+  "test_partition_used_for_selection": false,
+  "test_partition_status": "UNTOUCHED"
+}

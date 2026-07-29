@@ -1,0 +1,3 @@
+experiment_name,dropout,epochs_completed,best_epoch,initial_validation_loss,best_validation_loss,best_validation_perplexity,final_training_loss,final_validation_loss,total_seconds,peak_gpu_memory_gb,parameter_count,best_checkpoint,test_partition_used
+baseline_dropout_0.10,0.1,15,15,4.610473369341118,1.1254937060881118,3.081737946185641,1.2870077052558522,1.1254937060881118,133.06702961999963,0.5874242782592773,838400,checkpoints/phase5/baseline_dropout_0.10_best.pt,False
+experimental_dropout_0.30,0.3,15,15,4.610473369341118,1.5826700021318687,4.867935874290435,1.8446334668539655,1.5826700021318687,137.61072903200056,0.5937318801879883,838400,checkpoints/phase5/experimental_dropout_0.30_best.pt,False
