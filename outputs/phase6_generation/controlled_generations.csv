@@ -1,0 +1,72 @@
+prompt_id,prompt,prompt_purpose,setting_id,setting_description,temperature,top_k,seed,requested_new_characters,prompt_unknown_characters,generation_seconds,full_text,continuation,generated_characters,non_whitespace_characters,unique_characters,alphabetic_character_rate,printable_character_rate,newline_count,sentence_terminal_count,parenthesis_balance,character_repetition_rate,fourgram_repetition_rate,repeated_character_runs,contains_end_marker,empty_after_stripping
+commercial_terms,52.212-4 ,Common commercial-item contract-terms prefix.,greedy,Deterministic highest-probability decoding.,1.0,1,42,360,0,1.6915889839999636,"52.212-4 Contract Officer Contractor Officer may and and the following clause:
+
+
+AND OF CONTRACTION (APR 1984)
+
+(a) The Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be the Contractor shall be and the Contractor shall be the Contractor shall be and the Contr","Contract Officer Contractor Officer may and and the following clause:
+
+
+AND OF CONTRACTION (APR 1984)
+
+(a) The Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be the Contractor shall be and the Contractor shall be the Contractor shall be and the Contr",360,297,38,0.8,1.0,5,1,0,0.8944444444444445,0.6918767507002801,0,False,False
+commercial_terms,52.212-4 ,Common commercial-item contract-terms prefix.,conservative_top_k,Lower-temperature sampling from the ten most likely characters.,0.7,10,42,360,0,1.2002470700001595,"52.212-4 Contractor States and SAFESARS.C. 208(a), insert the following clause:
+
+(NOT clause)
+
+Alternate III (APR 19884)
+
+(a) The Contractor shall be made be and any of the contract shall be the product of this clause. As provided in the following contract prices to the Government and the Contractor’s provided at the agency in it of the Contractor shall are and the p","Contractor States and SAFESARS.C. 208(a), insert the following clause:
+
+(NOT clause)
+
+Alternate III (APR 19884)
+
+(a) The Contractor shall be made be and any of the contract shall be the product of this clause. As provided in the following contract prices to the Government and the Contractor’s provided at the agency in it of the Contractor shall are and the p",360,297,47,0.7638888888888888,1.0,6,4,0,0.8694444444444445,0.32773109243697474,0,False,False
+commercial_terms,52.212-4 ,Common commercial-item contract-terms prefix.,exploratory_top_k,Higher-diversity sampling from the twenty-five most likely characters.,1.0,25,42,360,0,0.8574792260001232,"52.212-4 Exective Except, Labor Loby Agring Provided in FACS 33.207(4)(2), insert the following clause with permision as concerns with acted with the profished clause of accepted may] under the tanntity contract accepted on ward; or
+(ii) Contractor entity of authoriz
+aditabining to
+the Government’s and and submit ventured previod, which the including this clause.
+(2)","Exective Except, Labor Loby Agring Provided in FACS 33.207(4)(2), insert the following clause with permision as concerns with acted with the profished clause of accepted may] under the tanntity contract accepted on ward; or
+(ii) Contractor entity of authoriz
+aditabining to
+the Government’s and and submit ventured previod, which the including this clause.
+(2)",360,307,45,0.7861111111111111,1.0,4,3,0,0.875,0.134453781512605,0,False,False
+information_security,52.204-21 ,Information-security clause-number prefix.,greedy,Deterministic highest-probability decoding.,1.0,1,42,360,0,0.7874377340001502,"52.204-21 Contractor Officer Provision of Contractor Officer may and and the following clause:
+
+
+PROVICE OF CONTRACTION (APR 1984)
+
+(a) The Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be the Contractor shall be the Contractor shall be accordance with the Contractor shall be and the Co","Contractor Officer Provision of Contractor Officer may and and the following clause:
+
+
+PROVICE OF CONTRACTION (APR 1984)
+
+(a) The Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be the Contractor shall be the Contractor shall be accordance with the Contractor shall be and the Co",360,299,40,0.8055555555555556,1.0,5,1,0,0.8888888888888888,0.6050420168067228,0,False,False
+information_security,52.204-21 ,Information-security clause-number prefix.,conservative_top_k,Lower-temperature sampling from the ten most likely characters.,0.7,10,42,360,0,0.8528315690000454,"52.204-21 Contract Officer Labor Defense Contract Transportation Officer May addes (services and the date of this clause, and in the contract, the Contractor’s and acceptance will be or submitted to be contract shall be excess the Contractor shall property to any the Contractor shall be and subcontract to the Contractor shall be the Contractor shall be to in accordanc","Contract Officer Labor Defense Contract Transportation Officer May addes (services and the date of this clause, and in the contract, the Contractor’s and acceptance will be or submitted to be contract shall be excess the Contractor shall property to any the Contractor shall be and subcontract to the Contractor shall be the Contractor shall be to in accordanc",360,303,31,0.8305555555555556,1.0,0,0,1,0.9138888888888889,0.3977591036414566,0,False,False
+information_security,52.204-21 ,Information-security clause-number prefix.,exploratory_top_k,Higher-diversity sampling from the twenty-five most likely characters.,1.0,25,42,360,0,0.8586349669999436,"52.204-21 Offeror Contractor on admition responsiation the contract owner the applies or otherwise and contract. The offeror’s transportation, the Contractor
+shall regulations contract.
+(4) The Contractor shall agency betimes in of the Government under this contract pformess that that is for a SAFETY, or are any convidered such defo with the basic the Contractor shall","Offeror Contractor on admition responsiation the contract owner the applies or otherwise and contract. The offeror’s transportation, the Contractor
+shall regulations contract.
+(4) The Contractor shall agency betimes in of the Government under this contract pformess that that is for a SAFETY, or are any convidered such defo with the basic the Contractor shall",360,307,38,0.8305555555555556,1.0,2,2,0,0.8944444444444445,0.2633053221288515,0,False,False
+electronic_payment,52.232-33 ,Electronic-payment clause-number prefix.,greedy,Deterministic highest-probability decoding.,1.0,1,42,360,0,0.8173648710001089,"52.232-33 Contract Officer Provision of Contractor Officer may and and the following clause:
+
+
+PROVICE OF CONTRACTION (APR 1984)
+
+(a) The Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be the Contractor shall be the Contractor shall be accordance with the Contractor shall be and the Cont","Contract Officer Provision of Contractor Officer may and and the following clause:
+
+
+PROVICE OF CONTRACTION (APR 1984)
+
+(a) The Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be and the Contractor shall be the Contractor shall be the Contractor shall be accordance with the Contractor shall be and the Cont",360,299,40,0.8055555555555556,1.0,5,1,0,0.8888888888888888,0.5966386554621849,0,False,False
+electronic_payment,52.232-33 ,Electronic-payment clause-number prefix.,conservative_top_k,Lower-temperature sampling from the ten most likely characters.,0.7,10,42,360,0,1.164589578999994,"52.232-33 Contractor Receive Schedule Agreement Requirements (FAR).
+As prescribed in 2.406 , insert the following clause, and in the contract, and or all employees, the contract that a mount any in
+employees or in submission of the Contractor shall be paid to the Contractor's including provided by this clause.
+(c) The Contractor at means any and interest by the Contra","Contractor Receive Schedule Agreement Requirements (FAR).
+As prescribed in 2.406 , insert the following clause, and in the contract, and or all employees, the contract that a mount any in
+employees or in submission of the Contractor shall be paid to the Contractor's including provided by this clause.
+(c) The Contractor at means any and interest by the Contra",360,302,39,0.7944444444444444,1.0,3,3,0,0.8916666666666667,0.24929971988795518,0,False,False
+electronic_payment,52.232-33 ,Electronic-payment clause-number prefix.,exploratory_top_k,Higher-diversity sampling from the twenty-five most likely characters.,1.0,25,42,360,0,1.2040257339999698,"52.232-33 Act interest decribed in 19.527 , insert the following clause, by the work or (1)(4)(1) of or which its data to determination apply with the protent of a comply or and which age requirement for have all be services to election of the Contractor to the Contracting Officer which a in the faullt provided this clause.
+(4) Encluded property by made the part of al","Act interest decribed in 19.527 , insert the following clause, by the work or (1)(4)(1) of or which its data to determination apply with the protent of a comply or and which age requirement for have all be services to election of the Contractor to the Contracting Officer which a in the faullt provided this clause.
+(4) Encluded property by made the part of al",360,296,39,0.7638888888888888,1.0,1,2,0,0.8916666666666667,0.15406162464985995,0,False,False

@@ -1,0 +1,4 @@
+setting_id,generations,average_generation_seconds,average_unique_characters,average_fourgram_repetition_rate,average_sentence_terminal_count,average_alphabetic_character_rate,total_repeated_character_runs
+conservative_top_k,3,1.072556072666733,39.0,0.32492997198879553,2.3333333333333335,0.7962962962962963,0
+exploratory_top_k,3,0.9733799756666789,40.666666666666664,0.18394024276377216,2.3333333333333335,0.7935185185185185,0
+greedy,3,1.0987971963334076,39.333333333333336,0.6311858076563959,1.0,0.8037037037037038,0

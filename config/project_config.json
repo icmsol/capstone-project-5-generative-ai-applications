@@ -152,5 +152,56 @@
     "controlled_variable": "dropout",
     "test_partition_status": "UNTOUCHED",
     "phase6_readiness": "PASS"
+  },
+  "phase6_test_evaluation": {
+    "status": "COMPLETE",
+    "selected_experiment": "baseline_dropout_0.10",
+    "test_records": 61,
+    "test_windows": 1444,
+    "test_cross_entropy_loss": 1.1417453788346033,
+    "test_perplexity": 3.132230525894668,
+    "test_token_accuracy": 0.6647204524384505,
+    "test_partition_role": "final evaluation only",
+    "metrics_artifact": "outputs/phase6_evaluation/selected_model_test_metrics.json"
+  },
+  "phase6_controlled_generation": {
+    "status": "COMPLETE",
+    "selected_experiment": "baseline_dropout_0.10",
+    "prompt_count": 3,
+    "decoding_setting_count": 3,
+    "generation_count": 9,
+    "characters_per_generation": 360,
+    "fixed_seed": 42,
+    "outputs_json": "outputs/phase6_generation/controlled_generations.json",
+    "outputs_csv": "outputs/phase6_generation/controlled_generations.csv",
+    "setting_summary": "outputs/phase6_generation/generation_setting_summary.csv",
+    "legal_status": "experimental output; not legally valid"
+  },
+  "phase6_generation_review": {
+    "status": "COMPLETE",
+    "recommended_research_setting": "conservative_top_k",
+    "operational_or_legal_use_approved": false,
+    "greedy_primary_issue": "repetition and mode collapse",
+    "conservative_primary_issue": "authoritative-sounding hallucination",
+    "exploratory_primary_issue": "lexical and syntactic corruption",
+    "quality_review_csv": "outputs/phase6_evaluation/generation_quality_review.csv",
+    "quality_review_json": "outputs/phase6_evaluation/generation_quality_review.json",
+    "review_audit": "data/audit/PHASE_6_GENERATION_REVIEW.md",
+    "tradeoff_figure": "figures/phase6_decoding_tradeoff.png"
+  },
+  "phase6_completion": {
+    "status": "COMPLETE",
+    "selected_model": "baseline_dropout_0.10",
+    "test_cross_entropy_loss": 1.1417453788346033,
+    "test_perplexity": 3.132230525894668,
+    "test_token_accuracy": 0.6647204524384505,
+    "test_minus_validation_loss": 0.01625167274649142,
+    "unknown_target_rate": 4.226816615334327e-05,
+    "controlled_generation_count": 9,
+    "recommended_research_setting": "conservative_top_k",
+    "operational_or_legal_use_approved": false,
+    "completion_audit_json": "data/audit/phase6_completion_audit.json",
+    "completion_audit_markdown": "data/audit/PHASE_6_COMPLETION_AUDIT.md",
+    "final_closeout_readiness": "PASS"
   }
 }

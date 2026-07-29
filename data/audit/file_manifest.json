@@ -146,5 +146,64 @@
   ],
   "phase5_selected_checkpoint": "checkpoints/phase5/selected_model_inference.pt",
   "phase5_status": "COMPLETE",
-  "phase6_readiness": "PASS"
+  "phase6_readiness": "PASS",
+  "phase6_completion_artifacts": [
+    {
+      "path": "config/project_config.json",
+      "bytes": 6983,
+      "sha256": "aaf032ea81dc087beeae6234f85e10beffb0f511523b9dcaf0d8da28b083ce61"
+    },
+    {
+      "path": "outputs/phase6_evaluation/selected_model_test_metrics.json",
+      "bytes": 1131,
+      "sha256": "d9d7b883bfe28209991245528cc0b698f89ec4de7e791c97bd5556fc19ef4a19"
+    },
+    {
+      "path": "outputs/phase6_generation/controlled_generations.json",
+      "bytes": 15405,
+      "sha256": "059c73fc5b081d51435f0cf3db39afdfbc2df19b85c6809fd87e65a89b5ca19a"
+    },
+    {
+      "path": "outputs/phase6_generation/controlled_generations.csv",
+      "bytes": 9546,
+      "sha256": "265c7b66094b3511cdaa18a19c5202c1a5db233e468bbc034cfe65897daadc1c"
+    },
+    {
+      "path": "outputs/phase6_generation/generation_setting_summary.csv",
+      "bytes": 518,
+      "sha256": "94f06ba04ccf2593ae21b73b7cc8fb6d46a16f7c06c914db653f0c4338e6f862"
+    },
+    {
+      "path": "outputs/phase6_evaluation/generation_quality_review.csv",
+      "bytes": 2484,
+      "sha256": "f344ed9929301e65aeac892be565575baec469054bf699e031f493d4eed20d03"
+    },
+    {
+      "path": "outputs/phase6_evaluation/generation_quality_review.json",
+      "bytes": 4842,
+      "sha256": "32ba1ae93521338121be5bd44614806678f5a5b4746795f20099c4d4c37150c9"
+    },
+    {
+      "path": "data/audit/PHASE_6_GENERATION_REVIEW.md",
+      "bytes": 2458,
+      "sha256": "f343bff231f44907c99e5fbd09c1aa072a6a73a9bb473d2ccd20a94fc4993a8c"
+    },
+    {
+      "path": "figures/phase6_decoding_tradeoff.png",
+      "bytes": 103987,
+      "sha256": "5f51c9d179ba9a879e36edb891d3df4aed24f3abf951ffc6ec64925535098c59"
+    },
+    {
+      "path": "data/audit/phase6_completion_audit.json",
+      "bytes": 3623,
+      "sha256": "6e69199eb7327a24ead7b636d0d6902d3630408670b23a04a70bcdce533cb725"
+    },
+    {
+      "path": "data/audit/PHASE_6_COMPLETION_AUDIT.md",
+      "bytes": 1647,
+      "sha256": "d9c534fea80a537eb01881c63534ef7bc934adfc933780cc573abbcdae7d92f8"
+    }
+  ],
+  "phase6_status": "COMPLETE",
+  "final_closeout_readiness": "PASS"
 }

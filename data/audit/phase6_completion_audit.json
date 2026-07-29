@@ -1,0 +1,103 @@
+{
+  "phase": 6,
+  "status": "PASS",
+  "selected_model": "baseline_dropout_0.10",
+  "held_out_evaluation": {
+    "test_records": 61,
+    "test_windows": 1444,
+    "valid_target_tokens": 354877,
+    "validation_loss": 1.1254937060881118,
+    "test_loss": 1.1417453788346033,
+    "test_perplexity": 3.132230525894668,
+    "test_token_accuracy": 0.6647204524384505,
+    "test_minus_validation_loss": 0.01625167274649142,
+    "unknown_target_rate": 4.226816615334327e-05,
+    "test_role": "final evaluation only"
+  },
+  "controlled_generation": {
+    "prompt_count": 3,
+    "decoding_setting_count": 3,
+    "generation_count": 9,
+    "characters_per_generation": 360,
+    "fixed_seed": 42,
+    "recommended_research_setting": "conservative_top_k",
+    "operational_or_legal_use_approved": false
+  },
+  "observed_failures": {
+    "greedy": "repetition and mode collapse",
+    "conservative_top_k": "authoritative-sounding hallucination",
+    "exploratory_top_k": "lexical and syntactic corruption"
+  },
+  "fourgram_repetition_rates": {
+    "greedy": 0.6311858076563959,
+    "conservative_top_k": 0.3249299719887955,
+    "exploratory_top_k": 0.1839402427637721
+  },
+  "phase6_exit_checks": {
+    "test_evaluation_status_pass": true,
+    "selected_model_is_baseline": true,
+    "test_record_count_is_61": true,
+    "test_window_count_is_1444": true,
+    "all_test_windows_validated": true,
+    "test_not_used_during_training": true,
+    "test_not_used_for_selection": true,
+    "test_used_for_final_evaluation": true,
+    "nine_generations_created": true,
+    "three_prompts_present": true,
+    "three_decoding_settings_present": true,
+    "all_generations_have_360_characters": true,
+    "quality_review_has_three_settings": true,
+    "research_setting_is_conservative_top_k": true,
+    "legal_or_operational_use_not_approved": true,
+    "tradeoff_figure_exists": true,
+    "generation_review_exists": true
+  },
+  "permanent_artifacts": [
+    {
+      "path": "config/project_config.json",
+      "bytes": 6983,
+      "sha256": "aaf032ea81dc087beeae6234f85e10beffb0f511523b9dcaf0d8da28b083ce61"
+    },
+    {
+      "path": "outputs/phase6_evaluation/selected_model_test_metrics.json",
+      "bytes": 1131,
+      "sha256": "d9d7b883bfe28209991245528cc0b698f89ec4de7e791c97bd5556fc19ef4a19"
+    },
+    {
+      "path": "outputs/phase6_generation/controlled_generations.json",
+      "bytes": 15405,
+      "sha256": "059c73fc5b081d51435f0cf3db39afdfbc2df19b85c6809fd87e65a89b5ca19a"
+    },
+    {
+      "path": "outputs/phase6_generation/controlled_generations.csv",
+      "bytes": 9546,
+      "sha256": "265c7b66094b3511cdaa18a19c5202c1a5db233e468bbc034cfe65897daadc1c"
+    },
+    {
+      "path": "outputs/phase6_generation/generation_setting_summary.csv",
+      "bytes": 518,
+      "sha256": "94f06ba04ccf2593ae21b73b7cc8fb6d46a16f7c06c914db653f0c4338e6f862"
+    },
+    {
+      "path": "outputs/phase6_evaluation/generation_quality_review.csv",
+      "bytes": 2484,
+      "sha256": "f344ed9929301e65aeac892be565575baec469054bf699e031f493d4eed20d03"
+    },
+    {
+      "path": "outputs/phase6_evaluation/generation_quality_review.json",
+      "bytes": 4842,
+      "sha256": "32ba1ae93521338121be5bd44614806678f5a5b4746795f20099c4d4c37150c9"
+    },
+    {
+      "path": "data/audit/PHASE_6_GENERATION_REVIEW.md",
+      "bytes": 2458,
+      "sha256": "f343bff231f44907c99e5fbd09c1aa072a6a73a9bb473d2ccd20a94fc4993a8c"
+    },
+    {
+      "path": "figures/phase6_decoding_tradeoff.png",
+      "bytes": 103987,
+      "sha256": "5f51c9d179ba9a879e36edb891d3df4aed24f3abf951ffc6ec64925535098c59"
+    }
+  ],
+  "final_closeout_readiness": "PASS"
+}
