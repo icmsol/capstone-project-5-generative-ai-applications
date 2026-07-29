@@ -30,5 +30,45 @@
   "src/extract_far_part52.py": {
     "bytes": 4734,
     "sha256": "1add441c618767dd6fd1f5bc05982a9372ca158b4d80fa4500a23f8a00aed814"
+  },
+  "config/project_config.json": {
+    "bytes": 1419,
+    "sha256": "bbc79d5b0500c0329946910850f01276c96acb075ca3ca5a811280eedf1b8c4a"
+  },
+  "data/audit/PHASE_3_PREPROCESSING_AUDIT.md": {
+    "bytes": 2094,
+    "sha256": "8f5e3f14085fd1ba31693ace28a06bb80a2a2c1090ab92ed3bfb7fb8c2ed0b6b"
+  },
+  "data/audit/phase3_split_audit.json": {
+    "bytes": 1029,
+    "sha256": "937a24e54ac28fe52ca15f4c28e84f3447ea2c2fa7eec07ce4ab3ec92a1d20fd"
+  },
+  "data/audit/phase3_sequence_audit.json": {
+    "bytes": 803,
+    "sha256": "75ff08f148fc0a4a63b6557c310c95828e92fd5a3cab516501b270d71bb7123f"
+  },
+  "data/processed/far_part_52_2_clauses_with_splits.csv": {
+    "bytes": 2302106,
+    "sha256": "f969bed6a262140c3e3d3cb452a7a21dbd7dbf728b6c3d2ab792ac234d8ca1d7"
+  },
+  "data/processed/far_part_52_2_split_assignments.csv": {
+    "bytes": 30437,
+    "sha256": "8d761f4715f3def543c50b156d8d3d58fbd8c0cd3e37f7b16306383a2f61b2c1"
+  },
+  "data/processed/character_vocabulary.json": {
+    "bytes": 2439,
+    "sha256": "8ec8000095333d26057f571f7f055ee1945e890ccd0e3ff81c3463e3ee4a9bbb"
+  },
+  "data/processed/sequence_windows.csv": {
+    "bytes": 683183,
+    "sha256": "1849ee90e252bdafdac15427655c5451015d0629942d5cab98ddc93163a6b039"
+  },
+  "figures/phase3_clause_length_distribution.png": {
+    "bytes": 61325,
+    "sha256": "6df44273f66bbd8123339622846144a3a2cdb2c1a1c75e39c3a8abf44b148e22"
+  },
+  "figures/phase3_sequence_windows_by_split.png": {
+    "bytes": 58212,
+    "sha256": "90e9a82a5beb83eb9e733d93cdb3e689d6200f0e1de6a9ec3435d353419791ba"
   }
 }

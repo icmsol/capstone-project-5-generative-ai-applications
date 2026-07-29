@@ -41,5 +41,20 @@
     ],
     "fixed_seed": 42
   },
-  "status": "provisional_until_smoke_test"
+  "status": "provisional_until_smoke_test",
+  "preprocessing": {
+    "split_seed": 42,
+    "split_ratio": {
+      "train": 0.8,
+      "validation": 0.1,
+      "test": 0.1
+    },
+    "context_length": 256,
+    "stride": 128,
+    "maximum_windows_per_record": 64,
+    "vocabulary_type": "character",
+    "vocabulary_source": "training partition only",
+    "pad_index": 0,
+    "unknown_index": 1
+  }
 }

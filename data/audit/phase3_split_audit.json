@@ -1,0 +1,39 @@
+{
+  "split_seed": 42,
+  "split_method": "Deterministic clause-level 80/10/10 assignment after family, length-bin, and stable-hash ordering.",
+  "leakage_control": "Each complete clause is assigned to exactly one partition before fixed-length sequence-window construction. The held-out test partition is not used during training or model selection.",
+  "record_counts": {
+    "train": 488,
+    "validation": 61,
+    "test": 61
+  },
+  "percentages": {
+    "train": 80.0,
+    "validation": 10.0,
+    "test": 10.0
+  },
+  "characters": {
+    "train": 1740590,
+    "validation": 219276,
+    "test": 247442
+  },
+  "word_like_tokens": {
+    "train": 269982,
+    "validation": 34337,
+    "test": 38081
+  },
+  "families_represented": {
+    "train": 43,
+    "validation": 32,
+    "test": 31
+  },
+  "integrity_checks": {
+    "total_records": 610,
+    "unique_record_ids": 610,
+    "unassigned_records": 0,
+    "exact_text_duplicates": 0,
+    "train_validation_overlap": 0,
+    "train_test_overlap": 0,
+    "validation_test_overlap": 0
+  }
+}

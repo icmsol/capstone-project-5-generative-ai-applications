@@ -1,0 +1,38 @@
+{
+  "context_length": 256,
+  "stride": 128,
+  "maximum_windows_per_record": 64,
+  "vocabulary_built_from": "training partition only",
+  "training_character_count": 94,
+  "total_vocabulary_size": 96,
+  "unseen_characters_by_partition": {
+    "train": [],
+    "validation": [
+      "\u2018"
+    ],
+    "test": [
+      "\u00ae",
+      "\u274f"
+    ]
+  },
+  "window_counts": {
+    "train": 11489,
+    "validation": 1408,
+    "test": 1444
+  },
+  "records_represented": {
+    "train": 488,
+    "validation": 61,
+    "test": 61
+  },
+  "families_missing_from_training": [
+    "202",
+    "239"
+  ],
+  "controls": {
+    "cross_clause_windows": false,
+    "test_used_for_model_selection": false,
+    "long_record_window_cap": 64,
+    "padding_loss_policy": "PAD index will be ignored by cross-entropy loss."
+  }
+}
