@@ -11,14 +11,21 @@
     "test_fraction": 0.1
   },
   "model": {
-    "type": "character_level_causal_transformer",
+    "vocab_size": 96,
     "context_length": 256,
+    "pad_index": 0,
     "d_model": 128,
     "n_heads": 4,
     "n_layers": 4,
-    "dropout_baseline": 0.1,
-    "dropout_experiment": 0.3,
-    "batch_size": 64
+    "dim_feedforward": 512,
+    "dropout": 0.1,
+    "architecture": "Custom character-level causal Transformer",
+    "activation": "GELU",
+    "normalization": "pre-layer normalization",
+    "weight_tying": true,
+    "loss_function": "CrossEntropyLoss with PAD ignored",
+    "total_parameters": 838400,
+    "trainable_parameters": 838400
   },
   "training": {
     "optimizer": "AdamW",
@@ -56,5 +63,30 @@
     "vocabulary_source": "training partition only",
     "pad_index": 0,
     "unknown_index": 1
+  },
+  "phase4_smoke_test": {
+    "status": "PASS",
+    "causal_invariance_verified": true,
+    "finite_nonzero_gradients_verified": true,
+    "short_optimization_steps": 25,
+    "short_optimization_loss_reduced": true
+  },
+  "phase4_training_loop_test": {
+    "status": "PASS",
+    "batch_size": 16,
+    "training_batches": 50,
+    "validation_batches": 20,
+    "validation_loss_improved": true,
+    "checkpoint_restoration_verified": true
+  },
+  "phase4_completion": {
+    "status": "PASS",
+    "forward_pass_verified": true,
+    "causal_invariance_verified": true,
+    "finite_gradient_flow_verified": true,
+    "fixed_batch_optimization_verified": true,
+    "validation_improvement_verified": true,
+    "checkpoint_round_trip_verified": true,
+    "phase5_ready": true
   }
 }

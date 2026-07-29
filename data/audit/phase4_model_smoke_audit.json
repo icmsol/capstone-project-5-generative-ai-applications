@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "architecture": {
+    "vocabulary_size": 96,
+    "context_length": 256,
+    "model_dimension": 128,
+    "attention_heads": 4,
+    "transformer_layers": 4,
+    "feedforward_dimension": 512,
+    "dropout": 0.1,
+    "total_parameters": 838400
+  },
+  "causality_test": {
+    "changed_suffix_start_position": 128,
+    "prefix_max_difference": 0.0,
+    "suffix_max_difference": 0.2911112308502197,
+    "tolerance": 1e-06,
+    "result": "PASS"
+  },
+  "gradient_test": {
+    "nonzero_gradient_tensors": 52,
+    "all_gradients_finite": true,
+    "first_step_gradient_norm": 3.757950782775879,
+    "gradient_clip_norm": 1.0,
+    "result": "PASS"
+  },
+  "optimization_test": {
+    "batch_size": 8,
+    "steps": 25,
+    "initial_loss": 4.614850997924805,
+    "final_loss": 3.1280646324157715,
+    "loss_reduction": 1.4867863655090332,
+    "loss_reduction_percentage": 32.21742947231899,
+    "elapsed_seconds": 0.9178200920000563,
+    "result": "PASS"
+  }
+}

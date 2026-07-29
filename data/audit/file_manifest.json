@@ -32,8 +32,8 @@
     "sha256": "1add441c618767dd6fd1f5bc05982a9372ca158b4d80fa4500a23f8a00aed814"
   },
   "config/project_config.json": {
-    "bytes": 1419,
-    "sha256": "bbc79d5b0500c0329946910850f01276c96acb075ca3ca5a811280eedf1b8c4a"
+    "bytes": 2440,
+    "sha256": "e2807742e7b61ee6dd2ac147014197dd4e69254580dd5aabcc2b90eb4c8782db"
   },
   "data/audit/PHASE_3_PREPROCESSING_AUDIT.md": {
     "bytes": 2094,
@@ -70,5 +70,21 @@
   "figures/phase3_sequence_windows_by_split.png": {
     "bytes": 58212,
     "sha256": "90e9a82a5beb83eb9e733d93cdb3e689d6200f0e1de6a9ec3435d353419791ba"
+  },
+  "data/audit/phase4_model_smoke_audit.json": {
+    "bytes": 1010,
+    "sha256": "0130e22459d25da9ae8ef4d130d4edf94d46cbec6558c6d58774f2a6b02eaffb"
+  },
+  "data/audit/phase4_training_loop_audit.json": {
+    "bytes": 1390,
+    "sha256": "32cb2b740995e7effa5d4ffc5e5a27e2fdab5e3d1fd90eab778d91b54774d837"
+  },
+  "data/audit/PHASE_4_MODEL_IMPLEMENTATION_AUDIT.md": {
+    "bytes": 3260,
+    "sha256": "6cf5df0c609a20814bfbb56b79148e2f94dba6d2782716b233e18aa05aa360af"
+  },
+  "figures/phase4_training_smoke_loss.png": {
+    "bytes": 121577,
+    "sha256": "1809d614a8096f5747385ca8a04baf1f431669ad858823126434c06e17268ebd"
   }
 }
