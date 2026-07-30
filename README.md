@@ -213,12 +213,18 @@ capstone-project-5-generative-ai-applications/
 │   ├── processed/
 │   └── raw/
 ├── figures/
+│   ├── phase3_clause_length_distribution.png
+│   ├── phase3_sequence_windows_by_split.png
+│   ├── phase4_training_smoke_loss.png
+│   ├── phase5_validation_loss_comparison.png
 │   └── phase6_decoding_tradeoff.png
 ├── outputs/
-│   ├── phase5/
+│   ├── phase5_training/
 │   ├── phase6_evaluation/
 │   └── phase6_generation/
 ├── reports/
+│   ├── Generative_AI_Analysis_Report.pdf
+│   └── module_summary.pdf
 ├── src/
 ├── generative_model.ipynb
 ├── requirements_minimal.txt
@@ -271,7 +277,19 @@ A CUDA-capable environment is recommended for training. CPU execution is suffici
 - Generation-quality review: `outputs/phase6_evaluation/generation_quality_review.json`
 - Decoding comparison figure: `figures/phase6_decoding_tradeoff.png`
 - Submission verification: `SUBMISSION_CHECKLIST.md`
-- Final analysis report: `reports/Generative_AI_Applications_Analysis_Report.pdf`
+- Final analysis report: `reports/Generative_AI_Analysis_Report.pdf`
+- Required duplicate report: `reports/module_summary.pdf`
+
+## Final Reports
+
+The final reviewer-facing analysis is stored in the `reports` directory:
+
+```text
+reports/Generative_AI_Analysis_Report.pdf
+reports/module_summary.pdf
+```
+
+The two PDF files are identical. `Generative_AI_Analysis_Report.pdf` is the canonical report filename, and `module_summary.pdf` is the required duplicate for submission compatibility.
 
 ## Limitations
 
