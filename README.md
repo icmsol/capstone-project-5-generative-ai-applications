@@ -23,7 +23,7 @@ The project was designed to:
 
 ## Dataset
 
-The frozen project corpus was derived from the official Acquisition.gov FAR publication associated with Federal Acquisition Circular 2026-01.
+The frozen project corpus was derived from the official Acquisition.gov FAR publication associated with Federal Acquisition Circular 2026-01. The source is publicly available, non-synthetic, appropriate for academic use, and was not reused from any earlier capstone project.
 
 After source-boundary validation and removal of material belonging to Subpart 52.3, the final dataset contained:
 
@@ -227,6 +227,7 @@ capstone-project-5-generative-ai-applications/
 │   └── module_summary.pdf
 ├── src/
 ├── generative_model.ipynb
+├── requirements.txt
 ├── requirements_minimal.txt
 ├── SUBMISSION_CHECKLIST.md
 └── README.md
@@ -255,7 +256,7 @@ cd capstone-project-5-generative-ai-applications
 python -m venv .venv
 source .venv/bin/activate
 
-pip install -r requirements_minimal.txt
+pip install -r requirements.txt
 jupyter notebook generative_model.ipynb
 ```
 
@@ -265,7 +266,7 @@ On Windows, activate the environment with:
 .venv\Scripts\activate
 ```
 
-A CUDA-capable environment is recommended for training. CPU execution is sufficient for documentation review and lightweight artifact inspection.
+A CUDA-capable environment is recommended for training. CPU execution is sufficient for documentation review and lightweight artifact inspection. The full `requirements.txt` is the rubric-compliance environment snapshot generated from the working Colab runtime; `requirements_minimal.txt` is retained only as a concise convenience list of the principal project libraries.
 
 ## Primary Deliverables
 
